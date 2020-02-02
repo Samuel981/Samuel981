@@ -34,3 +34,16 @@ jQuery(document).ready(function( $ ) {
 
 
 });
+
+//Reproducao de videos
+var $personagem = $('.personagem');
+
+$personagem.on('mouseenter', function (){
+	$personagem.get(0).play();
+});
+
+var $personagem = $('.personagem');
+
+$personagem.on('mouseout', function (){
+	$personagem.get(0).pause();
+});
